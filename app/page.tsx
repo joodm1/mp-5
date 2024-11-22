@@ -149,9 +149,8 @@ export default function Home() {
             }
         }
 
-
-
-        catch (noSlay){ //catchng stray errors apparebtly
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+        catch (noSlay){ //catchng stray errors apparet
             setError("Failed to shorten the URL. Please try again.");
         }
     };

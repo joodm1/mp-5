@@ -19,7 +19,13 @@ export async function POST(req: Request) {
         console.log("Alias creation result:", x); // debugging log
 
         return NextResponse.json({ alias: x.alias, url: x.url });
-    } catch (error: any) { //losing hope
+
+
+
+
+    }
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    catch (error: any) { //losing hope
 
 
         console.error("error in post /api/alias:", error); // i want to die
