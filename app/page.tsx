@@ -149,7 +149,7 @@ export default function Home() {
             }
         }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
         catch (noSlay){ //catchng stray errors apparet
             setError("Failed to shorten the URL. Please try again.");
         }
