@@ -1,11 +1,11 @@
 import { redirect } from "next/navigation";
 import getCollection, { URLS_COLLECTION } from "@/db";
 
-interface props {
+interface PageProps {
     params: { alias: string };
 }
 
-export default async function AliasPage({ params }: props) {
+export default async function AliasPage({ params }: PageProps) {
     const { alias } = params;
 
     // Fetch the database collection
